@@ -1,0 +1,6 @@
+---
+- name: install redis-server
+  apt:
+    pkg: redis-server
+    state: present
+    update_cache: no

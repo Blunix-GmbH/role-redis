@@ -1,0 +1,8 @@
+- name: template /etc/redis/redis.conf
+  template:
+    dest: /etc/redis/redis.conf
+    src: "templates/{{ ansible_distribution_release }}/etc/redis/redis.conf.j2"
+    owner: redis
+    group: root
+    mode: 0460
+  notify: restart redis

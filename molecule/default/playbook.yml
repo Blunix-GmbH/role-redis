@@ -1,0 +1,9 @@
+---
+- name: Converge
+  hosts: all
+  become: yes
+  roles:
+    - role: role-redis
+  vars:
+    redis_conf_bind: 127.0.0.1
+    redis_conf_masterauth: secret
