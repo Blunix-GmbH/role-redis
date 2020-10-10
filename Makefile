@@ -4,7 +4,7 @@ help:
 	@echo "Available targets are:"
 	@echo "- install  - install all dependencies"
 	@echo "- molecule - run molecule tests"
-	@echo "- test     - wrapper for running all tests"
+	@echo "- test     - run all tests"
 	@echo "- clean    - clean up the workspace"
 
 install:
